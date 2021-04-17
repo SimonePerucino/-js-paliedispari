@@ -15,6 +15,7 @@ if (NumeroUtente <= 0 || NumeroUtente >= 6) {
     console.log("hai scelto il numero " + NumeroUtente)
     var numeroComputer = NumeroRandom();
     console.log("il numero del computer è " + numeroComputer)
+    //  Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
     var somma = numeroComputer + NumeroUtente;
     console.log("la somma è " + somma)
     var risultato = pariDispari(somma);
@@ -22,16 +23,18 @@ if (NumeroUtente <= 0 || NumeroUtente >= 6) {
     if (risultato === "pari" && sceltaUtente === risultato) {
         console.log("hai vinto")
     } else {
+        // Dichiariamo chi ha vinto.
         console.log("il computer ha vinto")
     }
 }
 
 
 
-//  Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
-//  Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
-// Dichiariamo chi ha vinto.
 
+
+
+
+//  Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione).
 function NumeroRandom() {
     var numeroComputer = Math.floor(Math.random() * 6);
     return numeroComputer
